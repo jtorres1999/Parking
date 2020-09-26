@@ -1,0 +1,54 @@
+<div class="contenedor">
+    <img src="../../../assets/img/fondo2.jpg" alt="" style="position: fixed;">
+
+    <div class="card shadow mt-5">
+        <div class="card-header text-center">
+            Administrador
+        </div>
+        <form [formGroup]="formRegistro" (ngSubmit)="addAdmin()" autocomplete="off">
+            <div class="card-body" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mt-2">
+                            <label for="name">Nombres</label>
+                            <input type="text" id="name" formControlName="nombre" class="form-control" #limpiar>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mt-2">
+                            <label for="l-name">Apellidos</label>
+                            <input type="text" id="last-name" formControlName="apellido" class="form-control" #limpiar>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mt-2">
+                            <label for="phone">telefono</label>
+                            <input type="text" id="phone"formControlName="telefono" class="form-control" #limpiar>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mt-2">
+                            <label for="email">Correo</label>
+                            <input type="correo" id="email" formControlName="correo" class="form-control" #limpiar>
+                        </div>
+                    </div> 
+                    <div class="col-md-6">
+                        <div class="form-group mt-2">
+                            <label for="user">Usuario</label>
+                            <input type="text" id="user"formControlName="usuario" class="form-control" #limpiar>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mt-2">
+                            <label for="pass">Contraseña</label>
+                            <input type="password" id="pass"formControlName="contraseña" class="form-control" #limpiar>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+            </div>
+        </form>
+    </div>
+</div>
